@@ -1,0 +1,385 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background-color: #f6f0e5;
+    color: #34483b;
+}
+
+
+section {
+    scroll-margin-top: 85px;
+}
+
+
+header {
+    background-color: #193b32;
+    padding: 18px 7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    flex-wrap: wrap;
+    gap: 15px;
+
+    box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+}
+
+.logo {
+    color: #e9dcc8;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.logo span {
+    color: #c5a36b;
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+nav a {
+    color: #f4ebdc;
+    text-decoration: none;
+    margin: 0 8px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d6b778;
+}
+
+.hero {
+    min-height: 550px;
+    background-image:
+        linear-gradient(rgba(10, 30, 20, 0.45), rgba(10, 30, 20, 0.55)),
+        url("bg forest.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 700px;
+    color: #fff8eb;
+}
+
+.subjudul {
+    color: #e3c58b;
+    letter-spacing: 4px;
+    font-size: 12px;
+}
+
+.hero h1 {
+    font-size: 58px;
+    font-weight: normal;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+.deskripsi {
+    line-height: 1.9;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+
+.tombol {
+    display: inline-block;
+
+    background-color: #c5a36b;
+    color: #193b32;
+
+    padding: 14px 30px;
+    text-decoration: none;
+
+    border-radius: 3px;
+    letter-spacing: 1px;
+
+    transition: 0.3s;
+}
+
+.tombol:hover {
+    background-color: #f0dfbd;
+    transform: translateY(-3px);
+}
+
+
+.tentang {
+    background-color: #f6f0e5;
+    text-align: center;
+    padding: 85px 20px;
+}
+
+.label {
+    color: #a58a58;
+    font-size: 12px;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.tentang h2,
+.katalog h2,
+.layanan h2,
+.kontak h2 {
+    font-size: 36px;
+    font-weight: normal;
+    color: #294b3d;
+    margin: 15px 0;
+}
+
+.hiasan {
+    color: #b89b63;
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+.tentang > p:last-child {
+    max-width: 700px;
+    margin: auto;
+    line-height: 2;
+    font-size: 15px;
+}
+
+
+.katalog {
+    background-color: #e9e5d9;
+    padding: 80px 7%;
+    text-align: center;
+}
+
+.pengantar {
+    color: #766d5e;
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.produk {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    max-width: 1050px;
+    margin: auto;
+}
+
+.card {
+    background-color: #fffaf1;
+    border: 1px solid #d6c5a3;
+    padding: 12px;
+
+    transition: 0.3s;
+
+    box-shadow: 0 4px 12px rgba(39,58,43,0.08);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(39,58,43,0.18);
+}
+
+.card img {
+    width: 100%;
+    height: 330px;
+
+    object-fit: contain;
+    background-color: #eee9dd;
+}
+
+.card-info {
+    padding: 15px 5px;
+}
+
+.card h3 {
+    color: #365642;
+    font-size: 22px;
+    font-weight: normal;
+    margin: 8px 0;
+}
+
+.card p {
+    color: #88775e;
+    font-size: 13px;
+}
+
+.card strong {
+    display: block;
+    color: #a1844e;
+    font-size: 15px;
+    margin-top: 15px;
+    border-top: 1px solid #d6c5a3;
+    padding-top: 12px;
+}
+
+
+.layanan {
+    padding: 80px 7%;
+    text-align: center;
+    background-color: #f6f0e5;
+}
+
+.layanan-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.layanan-card {
+    background-color: #fffaf1;
+    border: 1px solid #d6c5a3;
+
+    padding: 30px 20px;
+    width: 280px;
+
+    transition: 0.3s;
+}
+
+.layanan-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(39,58,43,0.10);
+}
+
+.layanan-card h3 {
+    color: #45634d;
+    font-weight: normal;
+}
+
+.layanan-card p {
+    color: #766d5e;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.ikon {
+    color: #b89b63;
+    font-size: 30px;
+}
+
+.kontak {
+    background-color: #294b3d;
+    color: #fffaf1;
+
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.kontak h2 {
+    color: #f3e5cb;
+}
+
+.kontak > p:not(.label) {
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.kontak .tombol {
+    background-color: #c5a36b;
+}
+
+
+footer {
+    background-color: #193b32;
+    color: #e8d6b5;
+
+    text-align: center;
+    padding: 30px 15px;
+}
+
+footer p {
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.footer-hiasan {
+    color: #c5a36b;
+    font-size: 22px;
+}
+
+.copyright {
+    color: #b9b19f;
+    font-size: 11px;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 15px;
+    }
+
+    nav {
+        line-height: 2;
+    }
+
+    nav a {
+        margin: 4px;
+        font-size: 12px;
+    }
+
+    section {
+        scroll-margin-top: 115px;
+    }
+
+    .hero {
+        min-height: 500px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .produk {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .card img {
+        height: 230px;
+    }
+
+    .tentang h2,
+    .katalog h2,
+    .layanan h2,
+    .kontak h2 {
+        font-size: 29px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .produk {
+        grid-template-columns: 1fr;
+    }
+
+    .card img {
+        height: 350px;
+    }
+}
